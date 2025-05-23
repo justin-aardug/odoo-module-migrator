@@ -40,13 +40,13 @@ class ModuleMigration:
                 self._migration._commit_enabled,
             )
 
-        self._commit_changes(
-            "[MIG] %s: Migration to %s"
-            % (
-                self._module_name,
-                self._migration._migration_steps[-1]["target_version_name"],
-            )
-        )
+        # self._commit_changes(
+        #     "[MIG] %s: Migration to %s"
+        #     % (
+        #         self._module_name,
+        #         self._migration._migration_steps[-1]["target_version_name"],
+        #     )
+        # )
 
     def _get_manifest_path(self):
         for manifest_name in _MANIFEST_NAMES:
